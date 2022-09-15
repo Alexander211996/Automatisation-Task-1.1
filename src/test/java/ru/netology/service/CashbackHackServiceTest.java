@@ -11,7 +11,7 @@ public class CashbackHackServiceTest {
         int amount = 900;
         int expected = 100;
 
-        assertEquals(service.remain(amount), expected);
+        assertEquals(expected, service.remain(amount));
     }
 
     @Test
@@ -19,7 +19,7 @@ public class CashbackHackServiceTest {
         int amount = 700;
         int expected = 300;
 
-        assertEquals(service.remain(amount), expected);
+        assertEquals(expected, service.remain(amount));
     }
 
     @Test
@@ -27,7 +27,7 @@ public class CashbackHackServiceTest {
         int amount = 0;
         int expected = 1000;
 
-        assertEquals(service.remain(amount), expected);
+        assertEquals(expected, service.remain(amount));
     }
 
     @Test
@@ -35,7 +35,7 @@ public class CashbackHackServiceTest {
         int amount = 1000;
         int expected = 0;
 
-        assertEquals(service.remain(amount), expected);
+        assertEquals(expected, service.remain(amount));
     }
 
     @Test
@@ -43,7 +43,7 @@ public class CashbackHackServiceTest {
         int amount = 2000;
         int expected = 0;
 
-        assertEquals(service.remain(amount), expected);
+        assertEquals(expected, service.remain(amount));
 
     }
 }
